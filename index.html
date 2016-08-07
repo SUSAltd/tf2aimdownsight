@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		
+		<script src="lib/js/jquery-1.11.3.min.js"></script>
+		<script src="js/script.js"></script>
+		
+		<link rel="stylesheet" href="lib/css/normalize.css" />
+		<link rel="stylesheet" href="lib/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		
+		<title>
+			Aim-down-sight
+		</title>
+	</head>
+	<body>
+		<main class="container">
+			<h1>TF2 aim-down-sight script AKA the messiest thing I've ever created</h1>
+			
+			<p>
+				Note: This will only work with <code>sv_cheats 1</code> and <code>sv_allow_wait_command 1</code>.
+			</p>
+			
+			<h2>Your settings</h2>
+			
+			<label>In-game sensitivity: <input class="updatesscript" type="text" name="sens" value="3.5" size="2" /></label><br />
+			<label>Zoomed sensitivity: <input class="updatesscript" type="text" name="sens-z" value="1.75" size="2" /></label><br />
+			<label>Primary weapon key bind: <input class="updatesscript" type="text" name="primary" value="Q" size="2" /></label><br />
+			<label>Secondary weapon key bind: <input class="updatesscript" type="text" name="secondary" value="E" size="2" /></label><br />
+			<label>Melee weapon key bind: <input class="updatesscript" type="text" name="melee" value="R" size="2" /></label><br />
+			<label>PDA weapon key bind: <input class="updatesscript" type="text" name="pda" value="4" size="2" /></label><br />
+			<label>Alternate fire key bind: <input class="updatesscript" type="text" name="adskey" value="mouse2" size="5" /></label><br />
+			
+			<label>
+				Class:
+				<select class="updatesscript" name="tf2class">
+					<option value="scout">Scout</option>
+					<option value="soldier">Soldier</option>
+					<option value="pyro">Pyro</option>
+					<option value="demoman">Demoman</option>
+					<option value="heavy">Heavy</option>
+					<option value="engineer">Engineer</option>
+					<option value="medic">Medic</option>
+					<option value="sniper">Sniper</option>
+					<option value="spy">Spy</option>
+				</select>
+			</label><br />
+			
+			<label>
+				Primary weapon:
+				<select class="updatesscript weaponmenu" name="primarywep">
+					<option>None</option>
+				</select>
+			</label><br />
+			<label>
+				Secondary weapon:
+				<select class="updatesscript weaponmenu" name="secondarywep">
+					<option>None</option>
+				</select>
+			</label><br />
+			
+			<label><input class="updatesscript" type="checkbox" name="minvm" checked="checked" /> Use min viewmodels</label>
+			
+			<h2>The script</h2>
+			<h3>Instructions</h3>
+			<p>
+				Copy and paste the script into your plaintext-editor of choice (e.g. Notepad) and save it as a CFG file in your /common/Team Fortress 2/tf/ folder. Execute the script after switching in-game to your chosen class and weapons.
+			</p>
+			<p>
+				To turn it off, type <code>adsoff</code> in console.
+			</p>
+			<textarea class="scriptarea" readonly="readonly" name="script" rows="20" cols="100">// You've got no weapons selected -- no script necessary!</textarea>
+		</main>
+	</body>
+</html>
