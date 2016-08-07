@@ -329,13 +329,13 @@ alias checkzoom \"\" \n\
 alias +ads_off_m2 \"+attack2; alias \"checkzoom\" \"+zoom\"\" \n\
 alias -ads_off_m2 \"-attack2; alias \"checkzoom\" \"\"\" \n\
 \n\
-alias ads_on \"checkzoom; bind mouse1 \"+attack\"; bind " + attack2 + " \"+zoom\" \n";
+alias ads_on \"checkzoom; bind " + attack2 + " \"+zoom\" \n";
 		if (bothWeapons) {
-			scriptText += "alias ads_on2 \"checkzoom; bind mouse1 \"+attack\"; bind " + attack2 + " \"+zoom2\" \n";
+			scriptText += "alias ads_on2 \"checkzoom; bind " + attack2 + " \"+zoom2\" \n";
 		}
 		
-scriptText += "alias ads_off \"sens_def; -attack2; not_down_sights; bind mouse1 \"+attack\"; bind " + attack2 + " \"+ads_off_m2\" \n\
-alias ads_never \"sens_def; -attack2; not_down_sights; bind mouse1 \"+attack\"; bind " + attack2 + " \"+attack2\" \n\
+scriptText += "alias ads_off \"sens_def; -attack2; not_down_sights; bind " + attack2 + " \"+ads_off_m2\" \n\
+alias ads_never \"sens_def; -attack2; not_down_sights; bind " + attack2 + " \"+attack2\" \n\
 \n\
 alias +zoom \"sens_zoom; crosshair 1; zoom_in_anim\" \n\
 alias -zoom \"sens_def; crosshair 1; alias checkzoom \"\"; zoom_out_anim\" \n\
