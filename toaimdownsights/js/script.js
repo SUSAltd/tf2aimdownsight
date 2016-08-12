@@ -100,22 +100,22 @@ $(document).ready(function() {
 		],
 		demoman: [
 			[
-				{
-					name: "Grenade Launcher",
-					vm: [-15, -6.6, -1.5]
-				},
-				{
-					name: "Iron Bomber",
-					vm: [-15, -6.85, -1.36]
-				},
-				{
-					name: "Loch-n-Load",
-					vm: [-15, -7.4, -2.85]
-				},
-				{
-					name: "Loose Cannon",
-					vm: [-15, -6.85, -0.1]
-				},
+				// {
+					// name: "Grenade Launcher",
+					// vm: [-15, -6.6, -1.5]
+				// },
+				// {
+					// name: "Iron Bomber",
+					// vm: [-15, -6.85, -1.36]
+				// },
+				// {
+					// name: "Loch-n-Load",
+					// vm: [-15, -7.4, -2.85]
+				// },
+				// {
+					// name: "Loose Cannon",
+					// vm: [-15, -6.85, -0.1]
+				// },
 			],
 			[
 			
