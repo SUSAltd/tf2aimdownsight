@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Metronome thing</title>
+		
+		<script src="lib/jquery/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+		<script src="js/script.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	
+	<body>
+		<h1>Metronome thing</h1>
+		<h2>v0.3</h2>
+		<div class="controls">
+			<div class="bpm">
+				<label>BPM: <input type="text" id="bpm" size="3" value="120" /></label>
+				<div class="arrows">
+					<div><span class="glyphicon glyphicon-chevron-up"></span></div>
+					<div><span class="glyphicon glyphicon-chevron-down"></span></div>
+				</div>
+			</div>
+			<div class="ime">
+				<label>Time signaure: <input type="text" id="num" size="2" value="4" /> / 4</label>
+			</div>
+			<button id="tickbutton" type="button">Start beeping eternally</button>
+			<button id="tunebutton" type="button">GIMME AN A</button>
+		</div>
+	</body>
+</html>
